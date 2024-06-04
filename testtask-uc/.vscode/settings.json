@@ -1,0 +1,32 @@
+{
+  "cmake.statusbar.advanced": {
+    "debug": {
+      "visibility": "hidden"
+    },
+    "launch": {
+      "visibility": "hidden"
+    },
+    "build": {
+      "visibility": "hidden"
+    },
+    "buildTarget": {
+      "visibility": "hidden"
+    }
+  },
+  "cmake.buildBeforeRun": true,
+  "cmake.configureOnOpen": true,
+  "cmake.configureSettings": {
+    "CMAKE_MODULE_PATH": "${env:PICO_INSTALL_PATH}/pico-sdk-tools",
+    "CMAKE_BUILD_TYPE": "Debug"
+  },
+  "cmake.generator": "MinGW Makefiles",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "cmake.configureEnvironment": {
+    "PICO_SDK_PATH": "C:\\Program Files\\Raspberry Pi\\Pico SDK v1.5.1\\pico-sdk", //Change directory to your!
+    "PICO_TOOLCHAIN_PATH": "gcc-arm-none-eabi"
+  },
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.additionalCompilerSearchDirs": [
+    "gcc-arm-none-eabi"
+  ]
+}
